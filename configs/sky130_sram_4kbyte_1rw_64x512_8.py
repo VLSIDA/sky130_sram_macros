@@ -1,11 +1,10 @@
 """
-Single port, 1 kbytes SRAM, with byte write, useful for RISC-V processor main
+Single port, 4 kbytes SRAM, with byte write, useful for RISC-V processor main
 memory.
 """
 word_size = 64 # Bits
 num_words = 512
 human_byte_size = "{:.0f}kbytes".format((word_size * num_words)/1024/8)
-
 # Allow byte writes
 write_size = 8 # Bits
 
@@ -13,6 +12,8 @@ write_size = 8 # Bits
 num_rw_ports = 1
 num_r_ports = 0
 num_w_ports = 0
+num_spare_rows = 1
+num_spare_cols = 1
 ports_human = '1rw'
 
 import os
