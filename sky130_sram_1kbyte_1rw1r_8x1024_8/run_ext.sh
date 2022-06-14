@@ -1,13 +1,14 @@
 #!/bin/sh
-export OPENRAM_TECH="/home/mrg/openram//technology:/home/mrg/data/sky130_fd_bd_sram/tools/openram/technology"
-echo "$(date): Starting GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic"
+export OPENRAM_TECH="/openram/technology"
+echo "$(date): Starting GDS to MAG using Magic /usr/local/bin/magic"
 
-/home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic -dnull -noconsole << EOF
+/usr/local/bin/magic -dnull -noconsole << EOF
 drc off
 set VDD vdd
 set GND gnd
 set SUB gnd
 gds warning default
+gds flatglob *_?mos_m*
 gds flatten true
 gds ordering true
 gds readonly true
@@ -18,9 +19,11 @@ puts "Finished loading cell sky130_sram_1kbyte_1rw1r_8x1024_8"
 cellname delete \(UNNAMED\)
 writeall force
 port makeall
-extract unique all
 extract style ngspice(si)
-extract
+extract unique all
+extract all
+select top cell
+feedback why
 puts "Finished extract"
 ext2spice hierarchy on
 ext2spice format ngspice
@@ -33,9 +36,11 @@ ext2spice subcircuit top on
 ext2spice global off
 ext2spice format ngspice
 ext2spice sky130_sram_1kbyte_1rw1r_8x1024_8
+select top cell
+feedback why
 puts "Finished ext2spice"
 quit -noprompt
 EOF
 magic_retcode=$?
-echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /home/mrg/data/sky130_fd_bd_sram/env/conda/envs/sky130_fd_bd_sram/bin/magic"
+echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /usr/local/bin/magic"
 exit $magic_retcode

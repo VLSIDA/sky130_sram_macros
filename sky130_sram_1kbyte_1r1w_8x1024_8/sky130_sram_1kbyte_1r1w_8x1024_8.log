@@ -1,0 +1,415 @@
+[globals/init_openram]: Initializing OpenRAM...
+[globals/setup_paths]: Temporary files saved in /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/
+[globals/read_config]: Configuration file is /openram/macros/configs/sky130_sram_1kbyte_1r1w_8x1024_8.py
+[globals/read_config]: Output saved in /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/
+[globals/import_tech]: Adding technology path: /openram/technology
+[globals/init_paths]: Creating temp directory: /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+[characterizer/<module>]: Initializing characterizer...
+[characterizer/<module>]: Analytical model enabled.
+[verify/<module>]: Initializing verify...
+[verify/<module>]: Finding DRC/LVS/PEX tools.
+[globals/get_tool]: Using DRC: /usr/local/bin/magic
+[globals/get_tool]: Using LVS: /usr/local/bin/netgen
+[globals/get_tool]: Using PEX: /usr/local/bin/magic
+[globals/setup_bitcell]: Using bitcell: bitcell_2port
+|==============================================================================|
+|=========                      OpenRAM v1.1.18                       =========|
+|=========                                                            =========|
+|=========               VLSI Design and Automation Lab               =========|
+|=========        Computer Science and Engineering Department         =========|
+|=========            University of California Santa Cruz             =========|
+|=========                                                            =========|
+|=========          Usage help: openram-user-group@ucsc.edu           =========|
+|=========        Development help: openram-dev-group@ucsc.edu        =========|
+|=========Temp dir: /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/=========|
+|=========                See LICENSE for license info                =========|
+|==============================================================================|
+** Start: 06/10/2022 09:19:05
+Technology: sky130
+Total size: 8192 bits
+Word size: 8
+Words: 1024
+Banks: 1
+RW ports: 0
+R-only ports: 1
+W-only ports: 1
+DRC/LVS/PEX is only run on the top-level design to save run-time (inline_lvsdrc=True to do inline checking).
+Characterization is disabled (using analytical delay models) (analytical_delay=False to simulate).
+Only generating nominal corner timing.
+[sram_config/recompute_sizes]: Recomputing with words per row: 8
+[sram_config/recompute_sizes]: Rows: 128 Cols: 64
+[sram_config/recompute_sizes]: Row addr size: 7 Col addr size: 3 Bank addr size: 10
+[sram_config/compute_sizes]: Set SRAM Words Per Row=8
+Words per row: 8
+Output files are: 
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.lvs
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.sp
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.v
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.lib
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.py
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.html
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.log
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.lef
+/openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.gds
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_replica_bitcell_array 128 x 64
+[replica_bitcell_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_replica_bitcell_array 128 x 64 rbls: None left_rbl: None right_rbl: None
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_bitcell_array 128 x 64
+[bitcell_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_bitcell_array 128 x 64
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_replica_column 130 x 1
+WARNING: file hierarchy_layout.py: line 411: Could not find pin gnd on col_cap_bitcell_2port
+
+WARNING: file hierarchy_layout.py: line 411: Could not find pin gnd on col_cap_bitcell_2port
+
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_replica_column_0 130 x 1
+WARNING: file hierarchy_layout.py: line 411: Could not find pin gnd on col_cap_bitcell_2port
+
+WARNING: file hierarchy_layout.py: line 411: Could not find pin gnd on col_cap_bitcell_2port
+
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_dummy_array 1 x 64
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_col_cap_array 1 x 64
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_col_cap_array_0 1 x 64
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_row_cap_array 130 x 1
+[bitcell_base_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_row_cap_array_0 130 x 1
+[and2_dec/__init__]: Creating and2_dec and2_dec
+[and3_dec/__init__]: Creating and3_dec and3_dec
+[and4_dec/__init__]: Creating and4_dec and4_dec
+[wordline_driver_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_wordline_driver_array
+[wordline_driver/__init__]: Creating wordline_driver wordline_driver
+[and2_dec/__init__]: Creating and2_dec and2_dec_0
+[precharge_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_precharge_array
+[column_mux_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_column_mux_array
+[write_driver_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_write_driver_array
+[precharge_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_precharge_array_0
+[sense_amp_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_sense_amp_array
+[column_mux_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_column_mux_array_0
+[pand3/__init__]: Creating pand3 pand3
+[pdriver/__init__]: creating pdriver pdriver
+[dff_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_row_addr_dff rows=7 cols=1
+[dff_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_col_addr_dff rows=1 cols=3
+[dff_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_data_dff rows=1 cols=8
+[control_logic/__init__]: Creating control_logic_w
+[dff_buf/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_dff_buf
+[dff_buf_array/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_dff_buf_array
+[dff_buf/__init__]: Creating sky130_sram_1kbyte_1r1w_8x1024_8_dff_buf_0
+[pand2/__init__]: Creating pand2 pand2
+[pdriver/__init__]: creating pdriver pdriver_0
+[pbuf/__init__]: creating pbuf with size of 64
+[pdriver/__init__]: creating pdriver pdriver_1
+[pdriver/__init__]: creating pdriver pdriver_2
+[pand3/__init__]: Creating pand3 pand3_0
+[pdriver/__init__]: creating pdriver pdriver_3
+[pand3/__init__]: Creating pand3 pand3_1
+[pdriver/__init__]: creating pdriver pdriver_4
+[pdriver/__init__]: creating pdriver pdriver_5
+[delay_chain/__init__]: creating delay chain [4, 4, 4, 4, 4, 4, 4, 4, 4]
+[control_logic/__init__]: Creating control_logic_r
+** Submodules: 6.7 seconds
+** Placement: 0.0 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[hierarchy_layout/get_bbox]: Size: 448.06 x 431.69000000000005 with perimeter margin 0.6799999999999999
+[hierarchy_layout/get_bbox]: Size: 448.06 x 431.69000000000005 with perimeter margin 7.4799999999999995
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[grid/__init__]: BBOX coords: ll=v[-57.72,-31.51] ur=v[405.3,415.14000000000004]
+[grid/__init__]: BBOX grids: ll=v3d[-85, -46, 0.0] ur=v3d[596, 611, 0.0]
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.0 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 2.5 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.3 seconds
+**** Converting pins: 0.1 seconds
+**** Separating adjacent pins: 0.0 seconds
+*** Finding pins and blockages: 75.2 seconds
+[signal_escape_router/route_signal]: Escape routing csb0 with scale 5
+[signal_escape_router/route_signal]: Escape routing csb1 with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing din0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing clk0 with scale 5
+[signal_escape_router/route_signal]: Escape routing clk1 with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr0[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[7] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[8] with scale 5
+[signal_escape_router/route_signal]: Escape routing addr1[9] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[0] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[1] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[2] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[3] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[4] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[5] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[6] with scale 5
+[signal_escape_router/route_signal]: Escape routing dout1[7] with scale 5
+*** Maze routing pins: 102.3 seconds
+[router_tech/__init__]: Minimum track width: 0.680
+[router_tech/__init__]: Minimum track space: 0.300
+[router_tech/__init__]: Minimum track wire width: 0.380
+[supply_tree_router/route]: Running supply router on vdd and gnd...
+[grid/__init__]: BBOX coords: ll=v[-50.92,-24.71] ur=v[398.5,408.34000000000003]
+[grid/__init__]: BBOX grids: ll=v3d[-75, -36, 0.0] ur=v3d[586, 601, 0.0]
+**** Retrieving pins: 0.0 seconds
+**** Analyzing pins: 0.1 seconds
+[router/find_blockages]: Finding blockages.
+**** Finding blockages: 7.9 seconds
+[router/convert_blockages]: Converting blockages.
+**** Converting blockages: 0.4 seconds
+**** Converting pins: 8.6 seconds
+**** Separating adjacent pins: 52.6 seconds
+*** Finding pins and blockages: 141.4 seconds
+[grid/__init__]: BBOX coords: ll=v[-54.59,-28.07] ur=v[402.07,412.27]
+[grid/__init__]: BBOX grids: ll=v3d[-80, -41, 0.0] ur=v3d[591, 606, 0.0]
+[grid/__init__]: BBOX coords: ll=v[-57.99,-31.470000000000002] ur=v[405.47,415.67]
+[grid/__init__]: BBOX grids: ll=v3d[-85, -46, 0.0] ur=v3d[596, 611, 0.0]
+[supply_tree_router/route_pins]: Routing vdd with 283 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 282 remaining.
+[supply_tree_router/route_pins]: 25 supply segments routed, 257 remaining.
+[supply_tree_router/route_pins]: 50 supply segments routed, 232 remaining.
+[supply_tree_router/route_pins]: 75 supply segments routed, 207 remaining.
+[supply_tree_router/route_pins]: 100 supply segments routed, 182 remaining.
+[supply_tree_router/route_pins]: 125 supply segments routed, 157 remaining.
+[supply_tree_router/route_pins]: 150 supply segments routed, 132 remaining.
+[supply_tree_router/route_pins]: 175 supply segments routed, 107 remaining.
+[supply_tree_router/route_pins]: 200 supply segments routed, 82 remaining.
+[supply_tree_router/route_pins]: 225 supply segments routed, 57 remaining.
+[supply_tree_router/route_pins]: 250 supply segments routed, 32 remaining.
+[supply_tree_router/route_pins]: 275 supply segments routed, 7 remaining.
+[supply_tree_router/route_pins]: Routing gnd with 63 pins.
+[supply_tree_router/route_pins]: 0 supply segments routed, 62 remaining.
+[supply_tree_router/route_pins]: 25 supply segments routed, 37 remaining.
+[supply_tree_router/route_pins]: 50 supply segments routed, 12 remaining.
+*** Maze routing supplies: 473.8 seconds
+** Routing: 1186.3 seconds
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (30 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (60 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (90 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (121 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (151 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (181 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (211 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (241 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (271 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (301 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (331 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (361 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (392 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (422 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (452 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (482 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (512 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (542 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (572 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (602 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (633 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (663 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (693 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (723 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (753 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (783 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (813 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (843 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (874 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (904 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (934 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (964 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (994 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1024 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1054 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1084 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1114 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1145 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1175 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1205 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1235 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1265 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1295 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1325 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1355 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1386 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1416 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1446 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1476 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1506 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1536 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1566 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1596 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1627 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1657 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1687 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1717 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1747 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1777 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1807 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1837 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1867 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1898 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1928 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1958 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (1988 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2018 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2048 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2078 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2108 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2139 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2169 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2199 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2229 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2259 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2289 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2319 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2349 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2380 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2410 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2440 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2470 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2500 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2530 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2560 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2590 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2621 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2651 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2681 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2711 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2741 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2771 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2801 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2831 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2861 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2892 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2922 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2952 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (2982 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3012 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3042 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3072 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3102 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3133 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3163 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3193 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3223 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3253 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3283 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3313 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3343 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3374 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3404 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3434 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3464 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3494 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3524 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3554 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3584 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3614 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3645 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3675 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3705 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3735 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3765 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3795 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3825 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3855 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3886 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3916 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3946 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (3976 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4006 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4036 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4066 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4096 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4127 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4157 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4187 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4217 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4247 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4277 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4307 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4337 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4367 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4398 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4428 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4458 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4488 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4518 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4548 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_ext.sh (4578 seconds)
+WARNING: file magic.py: line 246: DRC Errors sky130_sram_1kbyte_1r1w_8x1024_8	19
+
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (30 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (60 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (90 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (121 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (151 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (181 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (211 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (241 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (271 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (301 seconds)
+[run_script/run_script]: Still running /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/run_lvs.sh (331 seconds)
+[verify.magic/run_lvs]: sky130_sram_1kbyte_1r1w_8x1024_8	LVS matches
+** Verification: 4967.8 seconds
+** SRAM creation: 6160.8 seconds
+SP: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.sp
+** Spice writing: 0.6 seconds
+GDS: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.gds
+** GDS: 0.7 seconds
+LEF: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.lef
+** LEF: 0.0 seconds
+LVS: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.lvs.sp
+** LVS writing: 0.0 seconds
+LIB: Characterizing... 
+[characterizer.lib/prepare_tables]: Slews: [0.00125 0.005   0.04   ]
+[characterizer.lib/prepare_tables]: Loads: [ 1.7225  6.89   27.56  ]
+[characterizer.lib/prepare_tables]: self.load_slews : [(1.7225, 0.00125), (6.89, 0.00125), (27.56, 0.00125), (1.7225, 0.005), (6.89, 0.005), (27.56, 0.005), (1.7225, 0.04), (6.89, 0.04), (27.56, 0.04)]
+[characterizer.lib/characterize_corners]: Characterizing corners: [('TT', 1.8, 25)]
+[characterizer.lib/characterize_corners]: Corner: ('TT', 1.8, 25)
+[characterizer.lib/characterize_corners]: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8_TT_1p8V_25C.lib
+WARNING: file elmore.py: line 45: In analytical mode, all ports have the timing of the first read port.
+
+[characterizer.elmore/analytical_power]: Dynamic Power: 50755735305.24138 mW
+[characterizer.elmore/analytical_power]: Leakage Power: 0.009501 mW
+[characterizer.elmore/get_lib_values]: Slew, Load, Delay(ns), Slew(ns)
+[characterizer.elmore/get_lib_values]: 0.00125, 1.7225, 0.2954465864932765, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.00125, 6.89, 0.32451377399327647, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.00125, 27.56, 0.4407825239932764, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.005, 1.7225, 0.2954465864932765, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.005, 6.89, 0.32451377399327647, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.005, 27.56, 0.4407825239932764, 0.016211249999999996
+[characterizer.elmore/get_lib_values]: 0.04, 1.7225, 0.2954465864932765, 0.00167765625
+[characterizer.elmore/get_lib_values]: 0.04, 6.89, 0.32451377399327647, 0.004584374999999999
+[characterizer.elmore/get_lib_values]: 0.04, 27.56, 0.4407825239932764, 0.016211249999999996
+** Characterization: 0.7 seconds
+Config: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.py
+** Config: 0.0 seconds
+Datasheet: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.html
+** Datasheet: 0.0 seconds
+Verilog: Writing to /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/sky130_sram_1kbyte_1r1w_8x1024_8.v
+** Verilog: 0.0 seconds
+[globals/cleanup_paths]: Preserving temp directory: /openram/macros/sky130_sram_1kbyte_1r1w_8x1024_8/tmp/
+[verify.magic/print_drc_stats]: DRC runs: 1
+[verify.magic/print_lvs_stats]: LVS runs: 1
+[verify.magic/print_pex_stats]: PEX runs: 0
+** End: 6162.9 seconds

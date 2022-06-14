@@ -89,7 +89,7 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
     dont_use  : true;
     map_only   : true;
     dont_touch : true;
-    area : 155263.878;
+    area : 157786.746;
 
     pg_pin(vccd1) {
          voltage_name : VCCD1;
@@ -102,9 +102,9 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
     }
 
     leakage_power () {
-      value : 0.017353;
+      value : 0.017349;
     }
-    cell_leakage_power : 0.017353;
+    cell_leakage_power : 0.017349;
     bus(din0){
         bus_type  : data; 
         direction  : input; 
@@ -158,14 +158,14 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
             related_pin : "clk0"; 
             timing_type : falling_edge; 
             cell_rise(CELL_TABLE) {
-            values("0.371, 0.4, 0.516",\
-                   "0.371, 0.4, 0.516",\
-                   "0.371, 0.4, 0.516");
+            values("0.333, 0.362, 0.478",\
+                   "0.333, 0.362, 0.478",\
+                   "0.333, 0.362, 0.478");
             }
             cell_fall(CELL_TABLE) {
-            values("0.371, 0.4, 0.516",\
-                   "0.371, 0.4, 0.516",\
-                   "0.371, 0.4, 0.516");
+            values("0.333, 0.362, 0.478",\
+                   "0.333, 0.362, 0.478",\
+                   "0.333, 0.362, 0.478");
             }
             rise_transition(CELL_TABLE) {
             values("0.002, 0.005, 0.016",\
@@ -328,57 +328,57 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
         internal_power(){
             when : "!csb0 & !web0"; 
             rise_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
             fall_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
         }
         internal_power(){
             when : "csb0 & !web0"; 
             rise_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
             fall_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
         }
         internal_power(){
             when : "!csb0 & web0"; 
             rise_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
             fall_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
         }
         internal_power(){
             when : "csb0 & web0"; 
             rise_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
             fall_power(scalar){
-                values("8.137514e+00");
+                values("8.567784e+10");
             }
         }
         timing(){ 
             timing_type :"min_pulse_width"; 
             related_pin  : clk0; 
             rise_constraint(scalar) {
-                values("0.955"); 
+                values("0.885"); 
             }
             fall_constraint(scalar) {
-                values("0.955"); 
+                values("0.885"); 
             }
          }
         timing(){ 
             timing_type :"minimum_period"; 
             related_pin  : clk0; 
             rise_constraint(scalar) {
-                values("1.91"); 
+                values("1.77"); 
             }
             fall_constraint(scalar) {
-                values("1.91"); 
+                values("1.77"); 
             }
          }
     }

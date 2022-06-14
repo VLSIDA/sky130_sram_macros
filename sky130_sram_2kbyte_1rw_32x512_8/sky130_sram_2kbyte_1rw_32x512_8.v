@@ -28,11 +28,13 @@ module sky130_sram_2kbyte_1rw_32x512_8(
   input  clk0; // clock
   input   csb0; // active low chip select
   input  web0; // active low write control
+  input [ADDR_WIDTH-1:0]  addr0;
   input [NUM_WMASKS-1:0]   wmask0; // write mask
   input           spare_wen0; // spare mask
-  input [ADDR_WIDTH-1:0]  addr0;
   input [DATA_WIDTH-1:0]  din0;
   output [DATA_WIDTH-1:0] dout0;
+
+  reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
 
   reg  csb0_reg;
   reg  web0_reg;
@@ -52,13 +54,12 @@ module sky130_sram_2kbyte_1rw_32x512_8(
     addr0_reg = addr0;
     din0_reg = din0;
     #(T_HOLD) dout0 = 32'bx;
-    if ( !csb0_reg && web0_reg && VERBOSE ) 
+    if ( !csb0_reg && web0_reg && VERBOSE )
       $display($time," Reading %m addr0=%b dout0=%b",addr0_reg,mem[addr0_reg]);
     if ( !csb0_reg && !web0_reg && VERBOSE )
       $display($time," Writing %m addr0=%b din0=%b wmask0=%b",addr0_reg,din0_reg,wmask0_reg);
   end
 
-reg [DATA_WIDTH-1:0]    mem [0:RAM_DEPTH-1];
 
   // Memory Write Block Port 0
   // Write Operation : When web0 = 0, csb0 = 0
