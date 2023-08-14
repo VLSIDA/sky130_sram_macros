@@ -81,7 +81,7 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
     dont_use  : true;
     map_only   : true;
     dont_touch : true;
-    area : 207839.61480000004;
+    area : 50479.10400000001;
 
     pg_pin(vccd1) {
          voltage_name : VCCD1;
@@ -94,9 +94,9 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
     }
 
     leakage_power () {
-      value : 0.009506;
+      value : 0.0006787434999999999;
     }
-    cell_leakage_power : 0.009506;
+    cell_leakage_power : 0.0006787434999999999;
     bus(din0){
         bus_type  : data; 
         direction  : input; 
@@ -110,28 +110,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.834, -0.834, -0.828",\
+                   "-0.834, -0.834, -0.828",\
+                   "-0.84, -0.84, -0.834");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.566, -0.56, -0.554",\
+                   "-0.566, -0.566, -0.554",\
+                   "-0.572, -0.566, -0.56");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.588, 0.588, 0.576",\
+                   "0.588, 0.588, 0.576",\
+                   "0.594, 0.594, 0.582");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.844, 0.844, 0.844",\
+                   "0.844, 0.844, 0.844",\
+                   "0.85, 0.85, 0.85");
             }
         }
         }
@@ -150,24 +150,24 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             related_pin : "clk0"; 
             timing_type : falling_edge; 
             cell_rise(CELL_TABLE) {
-            values("0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441");
+            values("2.618, 2.769, 2.845",\
+                   "2.618, 2.77, 2.846",\
+                   "2.626, 2.778, 2.853");
             }
             cell_fall(CELL_TABLE) {
-            values("0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441");
+            values("2.618, 2.769, 2.845",\
+                   "2.618, 2.77, 2.846",\
+                   "2.626, 2.778, 2.853");
             }
             rise_transition(CELL_TABLE) {
-            values("0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016");
+            values("0.157, 0.281, 0.717",\
+                   "0.157, 0.281, 0.717",\
+                   "0.157, 0.281, 0.717");
             }
             fall_transition(CELL_TABLE) {
-            values("0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016");
+            values("0.157, 0.281, 0.717",\
+                   "0.157, 0.281, 0.717",\
+                   "0.157, 0.281, 0.717");
             }
         }
         }
@@ -183,28 +183,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.834, -0.834, -0.828",\
+                   "-0.834, -0.834, -0.828",\
+                   "-0.84, -0.84, -0.834");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.566, -0.56, -0.554",\
+                   "-0.566, -0.566, -0.554",\
+                   "-0.572, -0.566, -0.56");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.588, 0.588, 0.576",\
+                   "0.588, 0.588, 0.576",\
+                   "0.594, 0.594, 0.582");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.844, 0.844, 0.844",\
+                   "0.844, 0.844, 0.844",\
+                   "0.85, 0.85, 0.85");
             }
         }
         }
@@ -217,28 +217,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.847, -0.847, -0.84",\
+                   "-0.847, -0.847, -0.84",\
+                   "-0.853, -0.853, -0.847");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.566, -0.56, -0.554",\
+                   "-0.566, -0.566, -0.554",\
+                   "-0.572, -0.566, -0.56");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.588, 0.588, 0.576",\
+                   "0.588, 0.588, 0.576",\
+                   "0.594, 0.594, 0.582");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.844, 0.844, 0.844",\
+                   "0.844, 0.844, 0.844",\
+                   "0.85, 0.85, 0.85");
             }
         }
     }
@@ -250,28 +250,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.847, -0.847, -0.84",\
+                   "-0.847, -0.847, -0.84",\
+                   "-0.847, -0.847, -0.847");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.566, -0.56, -0.554",\
+                   "-0.566, -0.566, -0.554",\
+                   "-0.572, -0.566, -0.56");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk0"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.588, 0.588, 0.576",\
+                   "0.588, 0.588, 0.576",\
+                   "0.594, 0.594, 0.582");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.844, 0.844, 0.844",\
+                   "0.844, 0.844, 0.844",\
+                   "0.85, 0.85, 0.85");
             }
         }
     }
@@ -283,57 +283,57 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
         internal_power(){
             when : "!csb0 & !web0"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("1.329489e+00");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("1.801536e+00");
             }
         }
         internal_power(){
             when : "csb0 & !web0"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("7.715107e-01");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("6.353128e-01");
             }
         }
         internal_power(){
             when : "!csb0 & web0"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("1.771855e+00");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("1.745994e+00");
             }
         }
         internal_power(){
             when : "csb0 & web0"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("6.404195e-01");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("6.218937e-01");
             }
         }
         timing(){ 
             timing_type :"min_pulse_width"; 
             related_pin  : clk0; 
             rise_constraint(scalar) {
-                values("0.816"); 
+                values("3.0225"); 
             }
             fall_constraint(scalar) {
-                values("0.816"); 
+                values("3.0225"); 
             }
          }
         timing(){ 
             timing_type :"minimum_period"; 
             related_pin  : clk0; 
             rise_constraint(scalar) {
-                values("1.632"); 
+                values("6.045"); 
             }
             fall_constraint(scalar) {
-                values("1.632"); 
+                values("6.045"); 
             }
          }
     }
@@ -352,24 +352,24 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             related_pin : "clk1"; 
             timing_type : falling_edge; 
             cell_rise(CELL_TABLE) {
-            values("0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441");
+            values("2.796, 2.819, 2.896",\
+                   "2.796, 2.819, 2.896",\
+                   "2.803, 2.826, 2.903");
             }
             cell_fall(CELL_TABLE) {
-            values("0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441",\
-                   "0.296, 0.325, 0.441");
+            values("2.796, 2.819, 2.896",\
+                   "2.796, 2.819, 2.896",\
+                   "2.803, 2.826, 2.903");
             }
             rise_transition(CELL_TABLE) {
-            values("0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016");
+            values("0.179, 0.302, 0.731",\
+                   "0.179, 0.302, 0.731",\
+                   "0.179, 0.302, 0.731");
             }
             fall_transition(CELL_TABLE) {
-            values("0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016",\
-                   "0.002, 0.005, 0.016");
+            values("0.179, 0.302, 0.731",\
+                   "0.179, 0.302, 0.731",\
+                   "0.179, 0.302, 0.731");
             }
         }
         }
@@ -385,28 +385,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk1"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.511, -0.511, -0.511",\
+                   "-0.511, -0.511, -0.511",\
+                   "-0.517, -0.517, -0.517");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.328, -0.328, -0.316",\
+                   "-0.328, -0.328, -0.316",\
+                   "-0.334, -0.334, -0.322");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk1"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.338, 0.338, 0.331",\
+                   "0.338, 0.338, 0.331",\
+                   "0.344, 0.344, 0.338");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.533, 0.533, 0.527",\
+                   "0.533, 0.533, 0.527",\
+                   "0.533, 0.539, 0.533");
             }
         }
         }
@@ -419,28 +419,28 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
             timing_type : setup_rising; 
             related_pin  : "clk1"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.523, -0.523, -0.517",\
+                   "-0.523, -0.523, -0.517",\
+                   "-0.529, -0.529, -0.523");
             }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103",\
-                   "0.103, 0.103, 0.103");
+            values("-0.328, -0.328, -0.316",\
+                   "-0.328, -0.328, -0.316",\
+                   "-0.334, -0.334, -0.322");
             }
         }
         timing(){ 
             timing_type : hold_rising; 
             related_pin  : "clk1"; 
             rise_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.338, 0.338, 0.331",\
+                   "0.338, 0.338, 0.331",\
+                   "0.344, 0.344, 0.338");
               }
             fall_constraint(CONSTRAINT_TABLE) {
-            values("-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056",\
-                   "-0.056, -0.056, -0.056");
+            values("0.527, 0.533, 0.527",\
+                   "0.533, 0.533, 0.527",\
+                   "0.533, 0.539, 0.533");
             }
         }
     }
@@ -452,39 +452,39 @@ cell (sky130_sram_1kbyte_1rw1r_8x1024_8){
         internal_power(){
             when : "!csb1"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("2.288043e+00");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("2.261542e+00");
             }
         }
         internal_power(){
             when : "csb1"; 
             rise_power(scalar){
-                values("5.075574e+10");
+                values("6.777120e-01");
             }
             fall_power(scalar){
-                values("5.075574e+10");
+                values("6.125928e-01");
             }
         }
         timing(){ 
             timing_type :"min_pulse_width"; 
             related_pin  : clk1; 
             rise_constraint(scalar) {
-                values("0.816"); 
+                values("3.0225"); 
             }
             fall_constraint(scalar) {
-                values("0.816"); 
+                values("3.0225"); 
             }
          }
         timing(){ 
             timing_type :"minimum_period"; 
             related_pin  : clk1; 
             rise_constraint(scalar) {
-                values("1.632"); 
+                values("6.045"); 
             }
             fall_constraint(scalar) {
-                values("1.632"); 
+                values("6.045"); 
             }
          }
     }
