@@ -1,25 +1,17 @@
 #!/bin/sh
-export OPENRAM_TECH="/home/bonal/PrivateRAM/technology:/home/bonal/.local/lib/python3.8/site-packages/openram/technology"
-echo "$(date): Starting GDS to MAG using Magic /home/bonal/PrivateRAM/miniconda/bin/magic"
+export OPENRAM_TECH="/openram/technology"
+echo "$(date): Starting GDS to MAG using Magic /usr/local/bin/magic"
 
-/home/bonal/PrivateRAM/miniconda/bin/magic -dnull -noconsole << EOF
+/usr/local/bin/magic -dnull -noconsole << EOF
 drc off
 set VDD vdd
 set GND gnd
 set SUB gnd
 gds warning default
 gds flatglob *_?mos_m*
-gds flatglob sky130_fd_bd_sram__sram_sp_cell_fom_serifs
-gds flatglob sky130_fd_bd_sram__sram_sp_cell
-gds flatglob sky130_fd_bd_sram__openram_sp_cell_opt1_replica_cell
-gds flatglob sky130_fd_bd_sram__openram_sp_cell_opt1a_replica_cell
-gds flatglob sky130_fd_bd_sram__sram_sp_cell_opt1_ce
-gds flatglob sky130_fd_bd_sram__openram_sp_cell_opt1_replica_ce
-gds flatglob sky130_fd_bd_sram__openram_sp_cell_opt1a_replica_ce
-gds flatglob sky130_fd_bd_sram__sram_sp_wlstrap_ce
-gds flatglob sky130_fd_bd_sram__sram_sp_wlstrap_p_ce
 gds flatten true
 gds ordering true
+gds readonly true
 gds read sky130_sram_1kbyte_1rw1r_32x256_8.gds
 puts "Finished reading gds sky130_sram_1kbyte_1rw1r_32x256_8.gds"
 load sky130_sram_1kbyte_1rw1r_32x256_8
@@ -50,5 +42,5 @@ puts "Finished ext2spice"
 quit -noprompt
 EOF
 magic_retcode=$?
-echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /home/bonal/PrivateRAM/miniconda/bin/magic"
+echo "$(date): Finished ($magic_retcode) GDS to MAG using Magic /usr/local/bin/magic"
 exit $magic_retcode

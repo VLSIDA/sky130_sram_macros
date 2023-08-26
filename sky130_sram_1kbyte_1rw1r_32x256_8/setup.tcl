@@ -149,7 +149,7 @@ foreach dev $devices {
 	property "-circuit1 $dev" parallel {w add}
 	property "-circuit1 $dev" tolerance {w 0.01} {l 0.01}
 	# Ignore these properties
-	property "-circuit1 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs
+	property "-circuit1 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs area perim topography
     }
     if {[lsearch $cells2 $dev] >= 0} {
 	permute "-circuit2 $dev" 1 3
@@ -158,7 +158,37 @@ foreach dev $devices {
 	property "-circuit2 $dev" parallel {w add}
 	property "-circuit2 $dev" tolerance {w 0.01} {l 0.01}
 	# Ignore these properties
-	property "-circuit2 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs
+	property "-circuit2 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs area perim topography
+    }
+}
+
+#---------------------------------------------------------------------
+# (MOS) ESD transistors.  Note that the ESD transistors have a flanged
+# gate.  Magic disagrees slightly on how to interpret the width of the
+# devices, so the tolerance is increased to 7% to cover the difference
+#---------------------------------------------------------------------
+
+lappend devices sky130_fd_pr__esd_nfet_g5v0d10v5
+lappend devices sky130_fd_pr__esd_pfet_g5v0d10v5
+
+foreach dev $devices {
+    if {[lsearch $cells1 $dev] >= 0} {
+	permute "-circuit1 $dev" 1 3
+	property "-circuit1 $dev" parallel enable
+	property "-circuit1 $dev" parallel {l critical}
+	property "-circuit1 $dev" parallel {w add}
+	property "-circuit1 $dev" tolerance {w 0.07} {l 0.01}
+	# Ignore these properties
+	property "-circuit1 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs area perim topography
+    }
+    if {[lsearch $cells2 $dev] >= 0} {
+	permute "-circuit2 $dev" 1 3
+	property "-circuit2 $dev" parallel enable
+	property "-circuit2 $dev" parallel {l critical}
+	property "-circuit2 $dev" parallel {w add}
+	property "-circuit2 $dev" tolerance {w 0.07} {l 0.01}
+	# Ignore these properties
+	property "-circuit2 $dev" delete as ad ps pd mult sa sb sd nf nrd nrs area perim topography
     }
 }
 
@@ -303,6 +333,9 @@ if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
         if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
             ignore class "-circuit1 $cell"
         }
+        if {[regexp {sky130_ef_sc_[^_]+__fakediode_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit1 $cell"
+        }
     }
     foreach cell $cells2 {
 #        if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
@@ -314,6 +347,9 @@ if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
         if {[regexp {sky130_fd_sc_[^_]+__tapvpwrvgnd_[[:digit:]]+} $cell match]} {
             ignore class "-circuit2 $cell"
         }
+        if {[regexp {sky130_ef_sc_[^_]+__fakediode_[[:digit:]]+} $cell match]} {
+            ignore class "-circuit2 $cell"
+        }
     }
 }
 
@@ -322,6 +358,9 @@ if { [info exist ::env(MAGIC_EXT_USE_GDS)] && $::env(MAGIC_EXT_USE_GDS) } {
 #---------------------------------------------------------------
 
 foreach cell $cells1 {
+    if {[regexp {sky130_ef_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+	property "-circuit1 $cell" parallel enable
+    }
     if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
 	property "-circuit1 $cell" parallel enable
     }
@@ -342,6 +381,9 @@ foreach cell $cells1 {
     }
 }
 foreach cell $cells2 {
+    if {[regexp {sky130_ef_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
+	property "-circuit2 $cell" parallel enable
+    }
     if {[regexp {sky130_fd_sc_[^_]+__decap_[[:digit:]]+} $cell match]} {
 	property "-circuit2 $cell" parallel enable
     }
@@ -411,5 +453,3 @@ if {[model blackbox]} {
 }
 
 #---------------------------------------------------------------
-# Increase the column sizes for ease of reading long names
-::netgen::format 120
