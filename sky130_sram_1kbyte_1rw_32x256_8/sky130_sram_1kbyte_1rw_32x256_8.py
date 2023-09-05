@@ -17,7 +17,7 @@ num_spare_rows = 1
 num_spare_cols = 1
 ports_human = '1rw'
 
-cell_format = "X{name}{hier_sep}xbank0{hier_sep}xbitcell_array{hier_sep}xreplica_bitcell_array{hier_sep}xbitcell_array{hier_sep}Xrow_{row}_col_{col}_bitcell"
+cell_format = "X{name}{hier_sep}xbank0{hier_sep}Xbitcell_array{hier_sep}Xbitcell_array{hier_sep}Xrow_{row}_col_{col}_bitcell"
 
 import os
 exec(open(os.path.join(os.path.dirname(__file__), '../sky130_sram_common.py')).read())
