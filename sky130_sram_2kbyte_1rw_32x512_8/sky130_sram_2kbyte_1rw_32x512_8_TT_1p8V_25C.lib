@@ -398,20 +398,20 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
             timing_type :"min_pulse_width";
             related_pin  : clk0;
             rise_constraint(scalar) {
-                values("3.594");
+            values("4.107");
             }
             fall_constraint(scalar) {
-            values("3.594");
+            values("4.107");
             }
         }
         timing(){
             timing_type :"minimum_period";
             related_pin  : clk0;
             rise_constraint(scalar) {
-            values("7.188");
+            values("8.125");
             }
             fall_constraint(scalar) {
-            values("7.188");
+            values("8.125");
             }
         }
     }
