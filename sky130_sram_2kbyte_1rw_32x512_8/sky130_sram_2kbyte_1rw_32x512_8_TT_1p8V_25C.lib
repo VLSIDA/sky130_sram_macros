@@ -361,7 +361,7 @@ cell (sky130_sram_2kbyte_1rw_32x512_8){
         internal_power(){
             when : "!csb0 & !web0";       
             rise_power(scalar){           
-            values("2.39900e3-03");       
+            values("2.39900e-03");       
             }                             
             fall_power(scalar){           
                 values("2.205771e-03");   
